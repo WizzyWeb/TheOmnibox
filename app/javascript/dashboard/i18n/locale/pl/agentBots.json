@@ -6,68 +6,68 @@
     "SIDEBAR_TXT": "<p><b>Agent Bots</b> <p>Agent Bots are like the most fabulous members of your team. They can handle the small stuff, so you can focus on the stuff that matters. Give them a try.</p> <p> You can manage your bots from this page or create new ones using the 'Add bot configuraton' button.</p> <p> Open the <a>Agent bots handbook</a> in another tab for a helping hand.</p>",
     "CSML_BOT_EDITOR": {
       "NAME": {
-        "LABEL": "Bot name",
-        "PLACEHOLDER": "Name your bot.",
+        "LABEL": "Nazwa bota",
+        "PLACEHOLDER": "Nazwij swojego bota.",
         "ERROR": "Nazwa bota jest wymagana."
       },
       "DESCRIPTION": {
-        "LABEL": "Bot description",
+        "LABEL": "Opis bota",
         "PLACEHOLDER": "Co robi ten bot?"
       },
       "BOT_CONFIG": {
         "ERROR": "Proszę wprowadzić konfigurację bota CSML powyżej.",
-        "API_ERROR": "Your CSML configuration is invalid. Please fix it and try again."
+        "API_ERROR": "Twoja konfiguracja CSML jest nieprawidłowa. Proszę ją poprawić i spróbować ponownie."
       },
-      "SUBMIT": "Sprawdź i zapisz"
+      "SUBMIT": "Zweryfikuj i zapisz"
     },
     "BOT_CONFIGURATION": {
       "TITLE": "Wybierz bota agenta",
-      "DESC": "Assign an Agent Bot to your inbox. They can handle initial conversations and transfer them to a live agent when necessary.",
+      "DESC": "Przypisz Bota Agenta do swojej skrzynki odbiorczej. Mogą oni obsługiwać wstępne rozmowy i przekazywać je do żywego agenta, gdy jest to konieczne.",
       "SUBMIT": "Aktualizuj",
-      "DISCONNECT": "Disconnect bot",
+      "DISCONNECT": "Odłącz bota",
       "SUCCESS_MESSAGE": "Pomyślnie zaktualizowano bota agenta.",
       "DISCONNECTED_SUCCESS_MESSAGE": "Pomyślnie odłączono bota agenta.",
-      "ERROR_MESSAGE": "Could not update the agent bot. Please try again.",
-      "DISCONNECTED_ERROR_MESSAGE": "Could not disconnect the agent bot. Please try again.",
-      "SELECT_PLACEHOLDER": "Select bot"
+      "ERROR_MESSAGE": "Nie udało się zaktualizować bota agenta. Proszę spróbować ponownie.",
+      "DISCONNECTED_ERROR_MESSAGE": "Nie udało się odłączyć bota agenta. Proszę spróbować ponownie.",
+      "SELECT_PLACEHOLDER": "Wybierz bota"
     },
     "ADD": {
       "TITLE": "Konfiguruj nowego bota",
       "CANCEL_BUTTON_TEXT": "Anuluj",
       "API": {
-        "SUCCESS_MESSAGE": "Pomyślnie dodano bota.",
-        "ERROR_MESSAGE": "Could not add bot. Please try again later."
+        "SUCCESS_MESSAGE": "Bot dodany pomyślnie.",
+        "ERROR_MESSAGE": "Nie udało się dodać bota. Proszę spróbować później."
       }
     },
     "LIST": {
-      "404": "No bots found. You can create a bot by clicking the 'Configure new bot' button ↗",
-      "LOADING": "Fetching bots...",
-      "TYPE": "Bot type"
+      "404": "Nie znaleziono botów. Możesz stworzyć bota, klikając przycisk 'Konfiguruj nowego bota' ↗",
+      "LOADING": "Pobieranie botów...",
+      "TYPE": "Typ bota"
     },
     "DELETE": {
       "BUTTON_TEXT": "Usuń",
-      "TITLE": "Delete bot",
+      "TITLE": "Usuń bota",
       "SUBMIT": "Usuń",
       "CANCEL_BUTTON_TEXT": "Anuluj",
       "DESCRIPTION": "Czy na pewno chcesz usunąć tego bota? Ta akcja jest nieodwracalna.",
       "API": {
-        "SUCCESS_MESSAGE": "Pomyślnie usunięto bota.",
-        "ERROR_MESSAGE": "Could not delete bot. Please try again."
+        "SUCCESS_MESSAGE": "Bot usunięty pomyślnie.",
+        "ERROR_MESSAGE": "Nie udało się usunąć bota. Proszę spróbować ponownie."
       }
     },
     "EDIT": {
       "BUTTON_TEXT": "Edytuj",
-      "LOADING": "Fetching bots...",
-      "TITLE": "Edit bot",
+      "LOADING": "Pobieranie botów...",
+      "TITLE": "Edytuj bota",
       "CANCEL_BUTTON_TEXT": "Anuluj",
       "API": {
-        "SUCCESS_MESSAGE": "Pomyślnie zaktualizowano bota.",
-        "ERROR_MESSAGE": "Could not update bot. Please try again."
+        "SUCCESS_MESSAGE": "Bot zaktualizowany pomyślnie.",
+        "ERROR_MESSAGE": "Nie udało się zaktualizować bota. Proszę spróbować ponownie."
       }
     },
     "TYPES": {
-      "WEBHOOK": "Webhook bot",
-      "CSML": "CSML bot"
+      "WEBHOOK": "Bot webhook",
+      "CSML": "Bot CSML"
     }
   }
 }

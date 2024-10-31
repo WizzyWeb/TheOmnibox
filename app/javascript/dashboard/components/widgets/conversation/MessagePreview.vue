@@ -1,3 +1,65 @@
+<script>
+import { MESSAGE_TYPE } from 'widget/helpers/constants';
+import { useMessageFormatter } from 'shared/composables/useMessageFormatter';
+import { ATTACHMENT_ICONS } from 'shared/constants/messages';
+
+export default {
+  name: 'MessagePreview',
+  props: {
+    message: {
+      type: Object,
+      required: true,
+    },
+    showMessageType: {
+      type: Boolean,
+      default: true,
+    },
+    defaultEmptyMessage: {
+      type: String,
+      default: '',
+    },
+  },
+  setup() {
+    const { getPlainText } = useMessageFormatter();
+    return {
+      getPlainText,
+    };
+  },
+  computed: {
+    messageByAgent() {
+      const { message_type: messageType } = this.message;
+      return messageType === MESSAGE_TYPE.OUTGOING;
+    },
+    isMessageAnActivity() {
+      const { message_type: messageType } = this.message;
+      return messageType === MESSAGE_TYPE.ACTIVITY;
+    },
+    isMessagePrivate() {
+      const { private: isPrivate } = this.message;
+      return isPrivate;
+    },
+    parsedLastMessage() {
+      const { content_attributes: contentAttributes } = this.message;
+      const { email: { subject } = {} } = contentAttributes || {};
+      return this.getPlainText(subject || this.message.content);
+    },
+    lastMessageFileType() {
+      const [{ file_type: fileType } = {}] = this.message.attachments;
+      return fileType;
+    },
+    attachmentIcon() {
+      return ATTACHMENT_ICONS[this.lastMessageFileType];
+    },
+    attachmentMessageContent() {
+      return `CHAT_LIST.ATTACHMENTS.${this.lastMessageFileType}.CONTENT`;
+    },
+    isMessageSticker() {
+      return this.message && this.message.content_type === 'sticker';
+    },
+  },
+};
+</script>
+
 <template>
   <div class="overflow-hidden text-ellipsis whitespace-nowrap">
     <template v-if="showMessageType">
@@ -48,74 +110,3 @@
     </span>
   </div>
 </template>
-
-<script>
-import { MESSAGE_TYPE } from 'widget/helpers/constants';
-import messageFormatterMixin from 'shared/mixins/messageFormatterMixin';
-import { ATTACHMENT_ICONS } from 'shared/constants/messages';
-
-export default {
-  name: 'MessagePreview',
-  mixins: [messageFormatterMixin],
-  props: {
-    message: {
-      type: Object,
-      required: true,
-    },
-    showMessageType: {
-      type: Boolean,
-      default: true,
-    },
-    defaultEmptyMessage: {
-      type: String,
-      default: '',
-    },
-  },
-  computed: {
-    messageByAgent() {
-      const { message_type: messageType } = this.message;
-      return messageType === MESSAGE_TYPE.OUTGOING;
-    },
-    isMessageAnActivity() {
-      const { message_type: messageType } = this.message;
-      return messageType === MESSAGE_TYPE.ACTIVITY;
-    },
-    isMessagePrivate() {
-      const { private: isPrivate } = this.message;
-      return isPrivate;
-    },
-    parsedLastMessage() {
-      const { content_attributes: contentAttributes } = this.message;
-      const { email: { subject } = {} } = contentAttributes || {};
-      return this.getPlainText(subject || this.message.content);
-    },
-    lastMessageFileType() {
-     if (this.message.attachments && this.message.attachments.length > 0) {
-      const [{ file_type: fileType } = {}] = this.message.attachments;
-      return fileType;
-  }
-  return null; // or any other default value you prefer if attachments are absent
-},
-    attachmentIcon() {
-      return ATTACHMENT_ICONS[this.lastMessageFileType];
-    },
-    attachmentMessageContent() {
-      return `CHAT_LIST.ATTACHMENTS.${this.lastMessageFileType}.CONTENT`;
-    },
-    isMessageSticker() {
-      return this.message && this.message.content_type === 'sticker';
-    },
-    isImageMessage() {
-      // Assuming you have a way to determine if the message is an image
-      // This could be based on the presence of attachments and a specific file type
-      return this.lastMessageFileType === 'image' && this.message.attachments.length > 0;
-    },
-    imageSrc() {
-      if (!this.isImageMessage) return '';
-      // Assuming the first attachment is the image you want to display
-      // Adjust accordingly if your data structure requires
-      return this.message.attachments[0].data_url; // Adjust the property path as needed
-    },
-  },
-};
-</script>

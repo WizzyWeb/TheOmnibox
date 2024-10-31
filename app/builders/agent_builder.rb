@@ -16,7 +16,6 @@ class AgentBuilder
   def perform
     ActiveRecord::Base.transaction do
       @user = find_or_create_user
-      send_confirmation_if_required
       create_account_user
     end
     @user
@@ -27,7 +26,7 @@ class AgentBuilder
   # Finds a user by email or creates a new one with a temporary password.
   # @return [User] the found or created user.
   def find_or_create_user
-    user = User.find_by(email: email)
+    user = User.from_email(email)
     return user if user
 
     temp_password = "1!aA#{SecureRandom.alphanumeric(12)}"
