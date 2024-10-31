@@ -79,7 +79,7 @@ class Attachment < ApplicationRecord
       file_size: file.byte_size
     }
 
-    metadata[:data_url] = metadata[:thumb_url] = external_url if message.instagram_story_mention?
+    metadata[:data_url] = metadata[:thumb_url] = external_url if external_url.present? # for facebook and instagram we their are serving from cdn directly
     metadata
   end
 

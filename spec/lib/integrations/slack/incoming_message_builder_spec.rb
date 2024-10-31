@@ -154,8 +154,8 @@ describe Integrations::Slack::IncomingMessageBuilder do
         {
           team_id: 'TLST3048H',
           api_app_id: 'A012S5UETV4',
-          event: link_shared_event.merge({ links: [{ url: "https://qa.chatwoot.com/app/accounts/1/conversations/#{conversation.display_id}",
-                                                     domain: 'qa.chatwoot.com' }] }),
+          event: link_shared_event.merge({ links: [{ url: "https://qa.emovur.com/app/accounts/1/conversations/#{conversation.display_id}",
+                                                     domain: 'qa.emovur.com' }] }),
           type: 'event_callback',
           event_time: 1_588_623_033
         }

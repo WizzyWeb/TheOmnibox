@@ -8,16 +8,15 @@
 - name: channel_twitter
   enabled: true
 - name: ip_lookup
-  enabled: false
+  enabled: true
 - name: disable_branding
-  enabled: false
-  premium:  true
+  enabled: true
 - name: email_continuity_on_api_channel
-  enabled: false
+  enabled: true
 - name: help_center
   enabled: true
 - name: agent_bots
-  enabled: false
+  enabled: true
 - name: macros
   enabled: true
 - name: agent_management
@@ -39,7 +38,7 @@
 - name: voice_recorder
   enabled: true
 - name: mobile_v2
-  enabled: false
+  enabled: true
 - name: channel_website
   enabled: true
 - name: campaigns
@@ -51,18 +50,22 @@
 - name: auto_resolve_conversations
   enabled: true
 - name: custom_reply_email
-  enabled: false
+  enabled: true
 - name: custom_reply_domain
-  enabled: false
+  enabled: true
 - name: audit_logs
-  enabled: false
-  premium: true
+  enabled: true
 - name: response_bot
   enabled: false
-  premium: true
 - name: message_reply_to
-  enabled: false
+  enabled: true
 - name: insert_article_in_reply
-  enabled: false
+  enabled: true
 - name: inbox_view
-  enabled: false
+  enabled: true
+- name: hide_contacts_for_agent
+  enabled: true
+- name: hide_filters_for_agent
+  enabled: true
+- name: hide_all_chats_for_agent
+  enabled: true

@@ -90,7 +90,6 @@ import SubmitButton from '../../../../../components/Button/SubmitButton.vue';
 import { isValidPassword } from 'shared/helpers/Validators';
 import GoogleOAuthButton from '../../../../../components/GoogleOauth/Button.vue';
 import { register } from '../../../../../api/auth';
-var CompanyEmailValidator = require('company-email-validator');
 
 export default {
   components: {
@@ -127,9 +126,6 @@ export default {
       email: {
         required,
         email,
-        businessEmailValidator(value) {
-          return CompanyEmailValidator.isCompanyEmail(value);
-        },
       },
       password: {
         required,
@@ -142,9 +138,9 @@ export default {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     termsLink() {
       return this.$t('REGISTER.TERMS_ACCEPT')
-        .replace('https://www.chatwoot.com/terms', this.globalConfig.termsURL)
+        .replace('https://www.emovur.com/terms', this.globalConfig.termsURL)
         .replace(
-          'https://www.chatwoot.com/privacy-policy',
+          'https://www.emovur.com/privacy-policy',
           this.globalConfig.privacyURL
         );
     },

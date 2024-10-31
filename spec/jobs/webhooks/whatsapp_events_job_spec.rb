@@ -62,6 +62,7 @@ RSpec.describe Webhooks::WhatsappEventsJob do
       job.perform_now(params)
     end
 
+    
     it 'will not enqueue if channel is not present' do
       allow(Whatsapp::IncomingMessageWhatsappCloudService).to receive(:new).and_return(process_service)
       allow(Whatsapp::IncomingMessageService).to receive(:new).and_return(process_service)

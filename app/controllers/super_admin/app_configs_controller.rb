@@ -38,8 +38,8 @@ class SuperAdmin::AppConfigsController < SuperAdmin::ApplicationController
                        when 'email'
                          ['MAILER_INBOUND_EMAIL_DOMAIN']
                        else
-                         %w[ENABLE_ACCOUNT_SIGNUP]
-                       end
+                        %w[ENABLE_ACCOUNT_SIGNUP FIREBASE_PROJECT_ID FIREBASE_CREDENTIALS]
+                      end
   end
 end
 

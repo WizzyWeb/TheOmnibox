@@ -37,6 +37,7 @@ class ConversationFinder
 
   def perform
     set_up
+    
 
     mine_count, unassigned_count, all_count, = set_count_for_all_conversations
     assigned_count = all_count - unassigned_count
@@ -60,8 +61,9 @@ class ConversationFinder
     set_inboxes
     set_team
     set_assignee_type
-
     find_all_conversations
+    return if @conversations.blank?
+
     filter_by_status unless params[:q]
     filter_by_team
     filter_by_labels
@@ -82,14 +84,17 @@ class ConversationFinder
   end
 
   def set_team
-    @team = current_account.teams.find(params[:team_id]) if params[:team_id]
-  end
+    @team_ids = @current_user.teams.pluck(:id)
+    return if params[:team_id].nil?
+    return if !(@team_ids.include?(params[:team])) && @current_user.agent?
+    @team = current_account.teams.find(params[:team_id])  end
 
-  def find_all_conversations
-    @conversations = current_account.conversations.where(inbox_id: @inbox_ids)
-    filter_by_conversation_type if params[:conversation_type]
-    @conversations
-  end
+def find_all_conversations
+  team_ids = @current_user.teams.pluck(:id)
+  @conversations = @current_user.administrator? ? current_account.conversations.where(inbox_id: @inbox_ids) : current_account.conversations.where(inbox_id: @inbox_ids, team_id: team_ids)
+  filter_by_conversation_type if params[:conversation_type]
+  @conversations
+end
 
   def filter_by_assignee_type
     case @assignee_type
@@ -177,4 +182,5 @@ class ConversationFinder
       @conversations.page(current_page).per(ENV.fetch('CONVERSATION_RESULTS_PER_PAGE', '25').to_i)
     end
   end
+  
 end

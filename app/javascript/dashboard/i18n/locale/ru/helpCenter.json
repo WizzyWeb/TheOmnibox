@@ -384,7 +384,7 @@
         "SLUG": {
           "LABEL": "Метка",
           "PLACEHOLDER": "Метка категории для url",
-          "HELP_TEXT": "app.chatwoot.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Необходимо указать метку"
         },
         "DESCRIPTION": {
@@ -415,7 +415,7 @@
         "SLUG": {
           "LABEL": "Метка",
           "PLACEHOLDER": "Метка категории для url",
-          "HELP_TEXT": "app.chatwoot.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Необходимо указать метку"
         },
         "DESCRIPTION": {

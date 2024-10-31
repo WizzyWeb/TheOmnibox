@@ -22,6 +22,7 @@ RSpec.describe 'Webhooks::WhatsappController', type: :request do
     end
   end
 
+  
   describe 'POST /webhooks/whatsapp/{:phone_number}' do
     it 'call the whatsapp events job with the params' do
       allow(Webhooks::WhatsappEventsJob).to receive(:perform_later)

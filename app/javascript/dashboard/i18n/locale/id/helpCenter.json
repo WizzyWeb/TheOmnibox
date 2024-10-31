@@ -384,7 +384,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug kategori untuk url",
-          "HELP_TEXT": "app.chatwoot.com/hc/my-portal/id/kategori/my-slug",
+          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/id/kategori/my-slug",
           "ERROR": "Slug diperlukan"
         },
         "DESCRIPTION": {
@@ -415,7 +415,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug kategori untuk url",
-          "HELP_TEXT": "app.chatwoot.com/hc/my-portal/id/kategori/my-slug",
+          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/id/kategori/my-slug",
           "ERROR": "Slug diperlukan"
         },
         "DESCRIPTION": {

@@ -1,15 +1,15 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for Chatwoot server.
+  description: This is the API documentation for Emovur Chat server.
   version: 1.0.0
   title: Chatwoot
-  termsOfService:	https://www.chatwoot.com/terms-of-service/
+  termsOfService:	https://www.emovur.com/terms-of-service/
   contact:
-    email: hello@chatwoot.com
+    email: hello@emovur.com
   license:
     name: MIT License
     url: https://opensource.org/licenses/MIT
-host: app.chatwoot.com
+host: chatapp.emovur.com
 basePath: /
 schemes:
   - https

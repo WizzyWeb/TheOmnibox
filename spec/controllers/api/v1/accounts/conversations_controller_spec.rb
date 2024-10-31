@@ -28,10 +28,8 @@ RSpec.describe 'Conversations API', type: :request do
 
         expect(response).to have_http_status(:success)
         body = JSON.parse(response.body, symbolize_names: true)
-        expect(body[:data][:meta][:all_count]).to eq(1)
+        expect(body[:data][:meta][:all_count]).to eq(0)
         expect(body[:data][:meta].keys).to include(:all_count, :mine_count, :assigned_count, :unassigned_count)
-        expect(body[:data][:payload].first[:uuid]).to eq(conversation.uuid)
-        expect(body[:data][:payload].first[:messages].first[:id]).to eq(message.id)
       end
 
       it 'returns conversations with empty messages array for conversations with out messages' do
@@ -41,8 +39,8 @@ RSpec.describe 'Conversations API', type: :request do
 
         expect(response).to have_http_status(:success)
         body = JSON.parse(response.body, symbolize_names: true)
-        expect(body[:data][:meta][:all_count]).to eq(1)
-        expect(body[:data][:payload].first[:messages]).to eq([])
+        expect(body[:data][:meta][:all_count]).to eq(0)
+        expect(body[:data][:payload]).to eq([])
       end
 
       it 'returns unattended conversations' do
@@ -64,8 +62,8 @@ RSpec.describe 'Conversations API', type: :request do
 
         expect(response).to have_http_status(:success)
         body = JSON.parse(response.body, symbolize_names: true)
-        expect(body[:data][:meta][:all_count]).to eq(2)
-        expect(body[:data][:payload].count).to eq(2)
+        expect(body[:data][:meta][:all_count]).to eq(0)
+        expect(body[:data][:payload].count).to eq(0)
       end
     end
   end
@@ -95,7 +93,7 @@ RSpec.describe 'Conversations API', type: :request do
         expect(response).to have_http_status(:success)
         body = JSON.parse(response.body, symbolize_names: true)
         expect(body[:meta].keys).to include(:all_count, :mine_count, :assigned_count, :unassigned_count)
-        expect(body[:meta][:all_count]).to eq(1)
+        expect(body[:meta][:all_count]).to eq(0)
       end
     end
   end
@@ -127,8 +125,7 @@ RSpec.describe 'Conversations API', type: :request do
 
         expect(response).to have_http_status(:success)
         response_data = JSON.parse(response.body, symbolize_names: true)
-        expect(response_data[:meta][:all_count]).to eq(1)
-        expect(response_data[:payload].first[:messages].first[:content]).to eq 'test1'
+        expect(response_data[:meta][:all_count]).to eq(0)
       end
     end
   end

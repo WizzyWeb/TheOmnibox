@@ -5,7 +5,7 @@ class Messages::Messenger::MessageBuilder
     # This check handles very rare case if there are multiple files to attach with only one usupported file
     return if unsupported_file_type?(attachment['type'])
 
-    attachment_obj = @message.attachments.new(attachment_params(attachment).except(:remote_file_url))
+    attachment_obj = @message.attachments.new(attachment_params(attachment))
     attachment_obj.save!
     attach_file(attachment_obj, attachment_params(attachment)[:remote_file_url]) if attachment_params(attachment)[:remote_file_url]
     fetch_story_link(attachment_obj) if attachment_obj.file_type == 'story_mention'
@@ -40,8 +40,7 @@ class Messages::Messenger::MessageBuilder
 
   def file_type_params(attachment)
     {
-      external_url: attachment['payload']['url'],
-      remote_file_url: attachment['payload']['url']
+      external_url: attachment['payload']['url']
     }
   end
 

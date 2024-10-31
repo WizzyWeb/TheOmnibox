@@ -34,10 +34,10 @@ PortalListItemView.args = {
   selectedLocaleCode: 'en-US',
   portals: [
     {
-      name: 'Chatwoot Help Center',
+      name: 'Emovur Chat Help Center',
       id: 1,
       color: 'red',
-      custom_domain: 'help-center.chatwoot.com',
+      custom_domain: 'help-center.emovur.com',
       articles_count: 123,
       header_text: 'Help center',
       homepage_link: null,
@@ -100,7 +100,7 @@ PortalListItemView.args = {
       ],
     },
     {
-      name: 'Chatwoot Docs',
+      name: 'Emovur Chat Docs',
       id: 2,
       color: 'green',
       custom_domain: 'doc-chatwoot.com',

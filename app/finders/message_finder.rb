@@ -11,6 +11,8 @@ class MessageFinder
   private
 
   def conversation_messages
+    return if @conversation.blank?
+
     @conversation.messages.includes(:attachments, :sender, sender: { avatar_attachment: [:blob] })
   end
 
