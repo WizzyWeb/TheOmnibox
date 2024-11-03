@@ -17,7 +17,7 @@ export default {
       apiKey: '',
       phoneNumberId: '',
       businessAccountId: '',
-      url: 'https://graph.facebook.com',
+      url: '',
       advanced: false,
     };
   },
@@ -33,12 +33,13 @@ export default {
     url: { required },
   },
   methods: {
+    
     async createChannel() {
       this.v$.$touch();
       if (this.v$.$invalid) {
         return;
       }
-
+      console.log("URL value:", this.url);
       try {
         const whatsappChannel = await this.$store.dispatch(
           'inboxes/createChannel',
