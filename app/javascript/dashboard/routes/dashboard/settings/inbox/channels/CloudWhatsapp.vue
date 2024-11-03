@@ -33,13 +33,14 @@ export default {
     url: { required },
   },
   methods: {
-    
     async createChannel() {
       this.v$.$touch();
       if (this.v$.$invalid) {
         return;
       }
-      console.log("URL value:", this.url);
+
+      console.log("URL value:", this.url); // Log URL to check its presence
+
       try {
         const whatsappChannel = await this.$store.dispatch(
           'inboxes/createChannel',
@@ -53,7 +54,7 @@ export default {
                 api_key: this.apiKey,
                 phone_number_id: this.phoneNumberId,
                 business_account_id: this.businessAccountId,
-                url: this.url || '',
+                url: this.url || '', // Ensure a default empty string if URL is undefined
               },
             },
           }
@@ -163,9 +164,8 @@ export default {
       </label>
     </div>
 
-
     <div class="medium-8 columns">
-      <label :class="{ error: $v.url.$error }">
+      <label :class="{ error: v$.url.$error }">
         {{ $t('INBOX_MGMT.ADD.WHATSAPP.URL.LABEL') }}
         <fieldset>
           <legend>
@@ -177,7 +177,7 @@ export default {
             type="text"
             placeholder="$t('INBOX_MGMT.ADD.WHATSAPP.URL.PLACEHOLDER')"
           />
-          <span v-if="$v.url.$error" class="message">
+          <span v-if="v$.url.$error" class="message">
             {{ $t('INBOX_MGMT.ADD.WHATSAPP.URL.ERROR') }}
           </span>
         </fieldset>
