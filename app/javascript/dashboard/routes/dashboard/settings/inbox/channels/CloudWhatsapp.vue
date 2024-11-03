@@ -17,7 +17,7 @@ export default {
       apiKey: '',
       phoneNumberId: '',
       businessAccountId: '',
-      url: '',
+      url: 'https://graph.facebook.com',
       advanced: false,
     };
   },
@@ -53,7 +53,7 @@ export default {
                 api_key: this.apiKey,
                 phone_number_id: this.phoneNumberId,
                 business_account_id: this.businessAccountId,
-                url: this.url,
+                url: this.url || 'https://graph.facebook.com',
               },
             },
           }
