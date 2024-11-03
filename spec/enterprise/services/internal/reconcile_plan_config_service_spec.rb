@@ -34,12 +34,15 @@ RSpec.describe Internal::ReconcilePlanConfigService do
         expect(Redis::Alfred.get(Redis::Alfred::CHATWOOT_INSTALLATION_CONFIG_RESET_WARNING)).to be_nil
       end
 
-    #  it 'updates the premium configs to default' do
-     #   create(:installation_config, name: 'INSTALLATION_NAME', value: 'custom-name')
-      ## service.perform
-        #expect(InstallationConfig.find_by(name: 'INSTALLATION_NAME').value).to eq('Chatwoot')
-        #expect(InstallationConfig.find_by(name: 'LOGO').value).to eq('/brand-assets/logo.svg')
-      #end
+      # To be enabled in the future when method is uncommented
+
+      # it 'updates the premium configs to default' do
+      #   create(:installation_config, name: 'INSTALLATION_NAME', value: 'custom-name')
+      #   create(:installation_config, name: 'LOGO', value: '/custom-path/logo.svg')
+      #   service.perform
+      #   expect(InstallationConfig.find_by(name: 'INSTALLATION_NAME').value).to eq('Chatwoot')
+      #   expect(InstallationConfig.find_by(name: 'LOGO').value).to eq('/brand-assets/logo.svg')
+      # end
     end
 
     context 'when pricing plan is not community' do
