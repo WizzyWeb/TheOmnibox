@@ -39,7 +39,6 @@ export default {
         return;
       }
 
-      console.log("URL value:", this.url); // Log URL to check its presence
 
       try {
         const whatsappChannel = await this.$store.dispatch(
@@ -164,7 +163,7 @@ export default {
       </label>
     </div>
 
-    <div class="medium-8 columns">
+    <div class="w-[65%] flex-shrink-0 flex-grow-0 max-w-[65%]">
       <label :class="{ error: v$.url.$error }">
         {{ $t('INBOX_MGMT.ADD.WHATSAPP.URL.LABEL') }}
         <fieldset>
