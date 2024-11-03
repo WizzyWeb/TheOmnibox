@@ -162,6 +162,28 @@ export default {
       </label>
     </div>
 
+
+    <div class="medium-8 columns">
+      <label :class="{ error: $v.url.$error }">
+        {{ $t('INBOX_MGMT.ADD.WHATSAPP.URL.LABEL') }}
+        <fieldset>
+          <legend>
+            <woot-switch v-model="advanced" size="small" :value="advanced" />
+          </legend>
+          <input
+            v-model.trim="url"
+            :disabled="!advanced"
+            type="text"
+            placeholder="$t('INBOX_MGMT.ADD.WHATSAPP.URL.PLACEHOLDER')"
+          />
+          <span v-if="$v.url.$error" class="message">
+            {{ $t('INBOX_MGMT.ADD.WHATSAPP.URL.ERROR') }}
+          </span>
+        </fieldset>
+      </label>
+    </div>
+
+
     <div class="w-full">
       <woot-submit-button
         :loading="uiFlags.isCreating"
