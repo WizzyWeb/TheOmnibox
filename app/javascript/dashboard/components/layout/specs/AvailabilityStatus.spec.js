@@ -6,6 +6,7 @@ import WootDropdownItem from 'shared/components/ui/dropdown/DropdownItem.vue';
 import WootDropdownMenu from 'shared/components/ui/dropdown/DropdownMenu.vue';
 import WootDropdownHeader from 'shared/components/ui/dropdown/DropdownHeader.vue';
 import WootDropdownDivider from 'shared/components/ui/dropdown/DropdownDivider.vue';
+import WootSwitch from 'dashboard/components/ui/Switch';
 import FluentIcon from 'shared/components/FluentIcon/DashboardIcon.vue';
 
 describe('AvailabilityStatus', () => {
@@ -46,6 +47,7 @@ describe('AvailabilityStatus', () => {
           WootDropdownHeader,
           WootDropdownDivider,
           FluentIcon,
+          WootSwitch,
         },
         stubs: {
           WootSwitch: { template: '<button />' },
