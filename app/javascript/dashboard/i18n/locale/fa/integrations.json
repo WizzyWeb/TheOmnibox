@@ -97,7 +97,7 @@
         "OPTION_LABEL": "یک کانال انتخاب کنید",
         "UPDATE": "اعمال شود",
         "BUTTON_TEXT": "اتصال کانال",
-        "DESCRIPTION": "Your Slack workspace is now linked with Chatwoot. However, the integration is currently inactive. To activate the integration and connect a channel to Chatwoot, please click the button below.\n\n**Note:** If you are attempting to connect a private channel, add the Chatwoot app to the Slack channel before proceeding with this step.",
+        "DESCRIPTION": "Your Slack workspace is now linked with Emovur Chat. However, the integration is currently inactive. To activate the integration and connect a channel to Emovur Chat, please click the button below.\n\n**Note:** If you are attempting to connect a private channel, add the Emovur Chat app to the Slack channel before proceeding with this step.",
         "ATTENTION_REQUIRED": "Attention required",
         "EXPIRED": "Your Slack integration has expired. To continue receiving messages on Slack, please delete the integration and connect your workspace again."
       },

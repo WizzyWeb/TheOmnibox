@@ -1,4 +1,4 @@
-# give chatwoot user permission to start/stop/restart chatwoot systemd service
+# give Emovur Chat user permission to start/stop/restart Emovur Chat systemd service
 
 %chatwoot ALL=NOPASSWD: /bin/systemctl start chatwoot.target
 %chatwoot ALL=NOPASSWD: /bin/systemctl stop chatwoot.target
