@@ -13,8 +13,8 @@ describe('#Campaigns Helper', () => {
     it('returns correct value if a valid URL is passed', () => {
       expect(
         isPatternMatchingWithURL(
-          'https://chatwoot.com/pricing*',
-          'https://chatwoot.com/pricing/'
+          'https://emovur.com/pricing*',
+          'https://emovur.com/pricing/'
         )
       ).toBe(true);
 
@@ -27,15 +27,15 @@ describe('#Campaigns Helper', () => {
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?chatwoot.com/pricing?test=true',
+          'https://{*.}?emovur.com/pricing?test=true',
           'https://chatapp.emovur.com/pricing/?test=true'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?chatwoot.com/pricing*\\?*',
-          'https://chatwoot.com/pricing/?test=true'
+          'https://{*.}?emovur.com/pricing*\\?*',
+          'https://emovur.com/pricing/?test=true'
         )
       ).toBe(true);
     });

@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Labdien"
       },
       "BRANDING_TEXT": "Darbināts ar Emovur Chat",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\nwindow.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

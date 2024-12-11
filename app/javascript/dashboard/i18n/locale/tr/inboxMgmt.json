@@ -357,7 +357,7 @@
       },
       "FINISH": {
         "TITLE": "Başardın!",
-        "DESC": "Facebook Sayfanızı Emovur Chat ile entegre etmeyi başarıyla tamamladınız. Bir müşteri Sayfanıza bir dahaki sefere mesaj gönderdiğinde, konuşma otomatik olarak gelen kutunuzda görünecektir. <br> Ayrıca, web sitenize kolayca ekleyebileceğiniz bir pencere öğesi komut dosyası da sağlıyoruz. Bu web sitenizde yayınlandıktan sonra, müşteriler herhangi bir harici aracın yardımı olmadan doğrudan web sitenizden size mesaj gönderebilir ve sohbet burada, Chatwoot'ta görünecektir. <br> Harika, ha? Peki, emin olmaya çalışıyoruz :)"
+        "DESC": "Facebook Sayfanızı Emovur Chat ile entegre etmeyi başarıyla tamamladınız. Bir müşteri Sayfanıza bir dahaki sefere mesaj gönderdiğinde, konuşma otomatik olarak gelen kutunuzda görünecektir. <br> Ayrıca, web sitenize kolayca ekleyebileceğiniz bir pencere öğesi komut dosyası da sağlıyoruz. Bu web sitenizde yayınlandıktan sonra, müşteriler herhangi bir harici aracın yardımı olmadan doğrudan web sitenizden size mesaj gönderebilir ve sohbet burada, Emovur Chat'ta görünecektir. <br> Harika, ha? Peki, emin olmaya çalışıyoruz :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "E-posta Sağlayıcınızı Seçin",
@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Merhaba"
       },
       "BRANDING_TEXT": "Emovur Chat tarafından desteklenmektedir",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\nwindow.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

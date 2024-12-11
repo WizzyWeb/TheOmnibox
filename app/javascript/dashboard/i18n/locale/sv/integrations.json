@@ -15,7 +15,7 @@
       "LEARN_MORE": "Learn more about webhooks",
       "FORM": {
         "CANCEL": "Avbryt",
-        "DESC": "Webbhook-händelser ger dig realtidsinformation om vad som händer i ditt Chatwoot-konto. Ange en giltig URL för att konfigurera en callback.",
+        "DESC": "Webbhook-händelser ger dig realtidsinformation om vad som händer i ditt Emovur Chat-konto. Ange en giltig URL för att konfigurera en callback.",
         "SUBSCRIPTIONS": {
           "LABEL": "Events",
           "EVENTS": {

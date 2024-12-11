@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Bonjour"
       },
       "BRANDING_TEXT": "Propulsé par Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Bună"
       },
       "BRANDING_TEXT": "Oferit de Emovur Chat",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\nwindow.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

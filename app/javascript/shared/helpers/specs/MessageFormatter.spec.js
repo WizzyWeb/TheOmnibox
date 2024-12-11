@@ -31,25 +31,25 @@ describe('#MessageFormatter', () => {
   describe('content with image and has "cw_image_height" query at the end of URL', () => {
     it('should set image height correctly', () => {
       const message =
-        'Emovur is an opensource tool. ![](http://chatwoot.com/chatwoot.png?cw_image_height=24px)';
+        'Emovur is an opensource tool. ![](http://emovur.com/chatwoot.png?cw_image_height=24px)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Emovur Chat is an opensource tool. <img src="http://chatwoot.com/chatwoot.png?cw_image_height=24px" alt="" style="height: 24px;" /></p>'
+        '<p>Emovur Chat is an opensource tool. <img src="http://emovur.com/chatwoot.png?cw_image_height=24px" alt="" style="height: 24px;" /></p>'
       );
     });
 
     it('should set image height correctly if its original size', () => {
       const message =
-        'Emovur is an opensource tool. ![](http://chatwoot.com/chatwoot.png?cw_image_height=auto)';
+        'Emovur is an opensource tool. ![](http://emovur.com/chatwoot.png?cw_image_height=auto)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Emovur Chat is an opensource tool. <img src="http://chatwoot.com/chatwoot.png?cw_image_height=auto" alt="" style="height: auto;" /></p>'
+        '<p>Emovur Chat is an opensource tool. <img src="http://emovur.com/chatwoot.png?cw_image_height=auto" alt="" style="height: auto;" /></p>'
       );
     });
 
     it('should not set height', () => {
       const message =
-        'Emovur is an opensource tool. ![](http://chatwoot.com/chatwoot.png)';
+        'Emovur is an opensource tool. ![](http://emovur.com/chatwoot.png)';
       expect(new MessageFormatter(message).formattedMessage).toMatch(
-        '<p>Emovur Chat is an opensource tool. <img src="http://chatwoot.com/chatwoot.png" alt="" /></p>'
+        '<p>Emovur Chat is an opensource tool. <img src="http://emovur.com/chatwoot.png" alt="" /></p>'
       );
     });
   });

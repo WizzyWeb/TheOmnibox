@@ -10,7 +10,7 @@
     "LIST": {
       "404": "Não há logs de auditoria referentes a esta conta.",
       "TITLE": "Gerir logs de auditoria",
-      "DESC": "Logs de auditoria são registos de eventos e ações do Sistema Chatwoot.",
+      "DESC": "Logs de auditoria são registos de eventos e ações do Sistema Emovur Chat.",
       "TABLE_HEADER": [
         "User",
         "Horário",

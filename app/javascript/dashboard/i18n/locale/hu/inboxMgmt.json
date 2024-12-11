@@ -12,7 +12,7 @@
       {
         "title": "Csatorna kiválasztása",
         "route": "settings_inbox_new",
-        "body": "Válasz egy szolgáltatót, melyet össze akarsz integrálni a Chatwoottal."
+        "body": "Válasz egy szolgáltatót, melyet össze akarsz integrálni a Emovur Chattal."
       },
       {
         "title": "Fiók létrehozása",
@@ -353,11 +353,11 @@
       },
       "DETAILS": {
         "TITLE": "Fiók részletek",
-        "DESC": "A legördülő listából kérjük válaszd ki hogy melyik Facebook oldalt szeretnéd a Chatwoothoz kötni. Egyedi nevet is adhatsz az Inboxnak a jobb azonosíthatóság érdekében."
+        "DESC": "A legördülő listából kérjük válaszd ki hogy melyik Facebook oldalt szeretnéd a Emovur Chathoz kötni. Egyedi nevet is adhatsz az Inboxnak a jobb azonosíthatóság érdekében."
       },
       "FINISH": {
         "TITLE": "Sikerült!",
-        "DESC": "Sikeresen integráltad a Facebook oldaladat a Chatwoottal. Legközelebb amikor egy ügyfél üzenetet ír az oldaladra, a beszélgetés automatiksuan megjelenik az inboxodban.<br> Ezen kívül egy widget kódot biztosítunk számodra, amelyet könnyen hozzáadhatsz a weboldaladhoz. Amint ez kiélesítésre kerül, az ügyfelek üzenetet küldhetnek Neked a weboldaladról bármilyen külső eszköz igénybevétele nélkül és ez a beszélgetés itt a Chatwootban fog megjelenni. <br>Menő, nem? Hát megpróbáljuk :)"
+        "DESC": "Sikeresen integráltad a Facebook oldaladat a Emovur Chattal. Legközelebb amikor egy ügyfél üzenetet ír az oldaladra, a beszélgetés automatiksuan megjelenik az inboxodban.<br> Ezen kívül egy widget kódot biztosítunk számodra, amelyet könnyen hozzáadhatsz a weboldaladhoz. Amint ez kiélesítésre kerül, az ügyfelek üzenetet küldhetnek Neked a weboldaladról bármilyen külső eszköz igénybevétele nélkül és ez a beszélgetés itt a Emovur Chatban fog megjelenni. <br>Menő, nem? Hát megpróbáljuk :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Add meg az email szolgáltatód",
@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Hello"
       },
       "BRANDING_TEXT": "Emovur Chat",
-      "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\nwindow.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "360Dialog",

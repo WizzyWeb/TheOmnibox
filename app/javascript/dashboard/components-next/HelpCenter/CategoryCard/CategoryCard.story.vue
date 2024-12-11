@@ -5,7 +5,7 @@ const categories = [
     id: 'getting-started',
     title: '🚀 Getting started',
     description:
-      'Learn how to use Chatwoot effectively and make the most of its features to enhance customer support and engagement.',
+      'Learn how to use Emovur Chat effectively and make the most of its features to enhance customer support and engagement.',
     articlesCount: '5',
   },
   {

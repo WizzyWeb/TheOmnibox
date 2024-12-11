@@ -357,7 +357,7 @@
       },
       "FINISH": {
         "TITLE": "Nalezeno to!",
-        "DESC": "Úspěšně jste dokončili integraci vaší facebookové stránky s Chatwootem. Až příště přijde zákaznická zpráva, konverzace se automaticky objeví ve vaší schránce.<br>Poskytujeme vám také widget skript, který můžete snadno přidat na vaše webové stránky. Jakmile je toto aktivní na vašich webových stránkách, zákazníci vám mohou posílat zprávy přímo z vašich webových stránek bez pomoci externího nástroje a konverzace se objeví přímo zde, na Emovur Chat.<br>Skvěle, co? No, určitě se pokusíme být :)"
+        "DESC": "Úspěšně jste dokončili integraci vaší facebookové stránky s Emovur Chatem. Až příště přijde zákaznická zpráva, konverzace se automaticky objeví ve vaší schránce.<br>Poskytujeme vám také widget skript, který můžete snadno přidat na vaše webové stránky. Jakmile je toto aktivní na vašich webových stránkách, zákazníci vám mohou posílat zprávy přímo z vašich webových stránek bez pomoci externího nástroje a konverzace se objeví přímo zde, na Emovur Chat.<br>Skvěle, co? No, určitě se pokusíme být :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Hello"
       },
       "BRANDING_TEXT": "Powered by Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

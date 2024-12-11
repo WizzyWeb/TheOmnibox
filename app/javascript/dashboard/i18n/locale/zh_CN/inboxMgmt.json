@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "您好"
       },
       "BRANDING_TEXT": "由 Emovur Chat 支持",
-      "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
+      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

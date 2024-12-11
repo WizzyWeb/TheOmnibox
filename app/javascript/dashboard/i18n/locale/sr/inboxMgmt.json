@@ -12,7 +12,7 @@
       {
         "title": "Izaberite kanal",
         "route": "settings_inbox_new",
-        "body": "Izaberte provajdera kojeg želite da integrišete sa Chatwoot-om."
+        "body": "Izaberte provajdera kojeg želite da integrišete sa Emovur Chat-om."
       },
       {
         "title": "Napravi prijemno sanduče",
@@ -353,11 +353,11 @@
       },
       "DETAILS": {
         "TITLE": "Detalji prijemnog sandučeta",
-        "DESC": "Iz padajućeg menija ispod, izaberite Fejsbuk stranicu koju želite da povežete sa Chatwoot-om. Takođe možete navesti proizvoljan naziv prijemnog sandučeta za bolju identifikaciju."
+        "DESC": "Iz padajućeg menija ispod, izaberite Fejsbuk stranicu koju želite da povežete sa Emovur Chat-om. Takođe možete navesti proizvoljan naziv prijemnog sandučeta za bolju identifikaciju."
       },
       "FINISH": {
         "TITLE": "Uspeli ste!",
-        "DESC": "Uspešno ste završili integraciju vaše Fejsbuk stranice sa Chatwoo-om. Kada potrošač sledeći put pošalje poruku na tvojoj stranici, razgovor će se automatski pojaviti u prijemnom sandučetu.<br>Takođe vam pružamo skriptu za vidžet koju možete jednostavno dodati na veb sajt. Onda kada je postavljen na veb sajt, potrošači mogu da vam pošalju poruku direktno sa veb sajta bez pomoći eksternih alata i razgovor će se pojaviti ovde, na Chatwoot-u.<br>Kul, zar ne? Pa, svakako se trudimo da bude :)"
+        "DESC": "Uspešno ste završili integraciju vaše Fejsbuk stranice sa Chatwoo-om. Kada potrošač sledeći put pošalje poruku na tvojoj stranici, razgovor će se automatski pojaviti u prijemnom sandučetu.<br>Takođe vam pružamo skriptu za vidžet koju možete jednostavno dodati na veb sajt. Onda kada je postavljen na veb sajt, potrošači mogu da vam pošalju poruku direktno sa veb sajta bez pomoći eksternih alata i razgovor će se pojaviti ovde, na Emovur Chat-u.<br>Kul, zar ne? Pa, svakako se trudimo da bude :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -740,7 +740,7 @@
         "AGENT_MESSAGE": "Zdravo"
       },
       "BRANDING_TEXT": "Pokreće Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.chatwootSettings ={options};"
+      "SCRIPT_SETTINGS": "\n      window.emovurSettings ={options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

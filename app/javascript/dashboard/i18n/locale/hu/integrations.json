@@ -97,7 +97,7 @@
         "OPTION_LABEL": "Csatorna kiválasztása",
         "UPDATE": "Frissítés",
         "BUTTON_TEXT": "Csatlakozás a csatornához",
-        "DESCRIPTION": "A Slack munkaterülete mostantól összekapcsolódik a Chatwoot-tal. Az integráció azonban jelenleg inaktív. Az aktiválásához és egy Chatwoot-hoz való csatlakoztatásához kattintson az alábbi gombra.\n\n**Figyelem:** Ha egy privát csatornát próbál csatlakoztatni, akkor a Emovur Chat alkalmazást adja hozzá a Slack-csatornához, mielőtt ezt a lépést folytatná.",
+        "DESCRIPTION": "A Slack munkaterülete mostantól összekapcsolódik a Emovur Chat-tal. Az integráció azonban jelenleg inaktív. Az aktiválásához és egy Emovur Chat-hoz való csatlakoztatásához kattintson az alábbi gombra.\n\n**Figyelem:** Ha egy privát csatornát próbál csatlakoztatni, akkor a Emovur Chat alkalmazást adja hozzá a Slack-csatornához, mielőtt ezt a lépést folytatná.",
         "ATTENTION_REQUIRED": "Figyelem szükséges",
         "EXPIRED": "A Slack integráció lejárt. Ha továbbra is szeretne üzeneteket kapni a Slacken, törölje az integrációt, és csatlakoztassa újra a munkaterületét."
       },
