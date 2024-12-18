@@ -35,7 +35,7 @@ export default {
   HELP_CENTER_DOCS_URL:
     'https://www.emovur.com/docs/product/others/help-center',
   TESTIMONIAL_URL: 'https://testimonials.cdn.emovur.com/content.json',
-  SMALL_SCREEN_BREAKPOINT: 1024,
+  SMALL_SCREEN_BREAKPOINT: 1200,
   AVAILABILITY_STATUS_KEYS: ['online', 'busy', 'offline'],
   SNOOZE_OPTIONS: {
     UNTIL_NEXT_REPLY: 'until_next_reply',
