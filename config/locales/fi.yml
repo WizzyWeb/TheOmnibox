@@ -193,7 +193,7 @@ fi:
       description: "Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents."
     dyte:
       name: "Dyte"
-      description: "Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Chatwoot."
+      description: "Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Emovur Chat."
       meeting_name: "%{agent_name} has started a meeting"
     slack:
       name: "Slack"

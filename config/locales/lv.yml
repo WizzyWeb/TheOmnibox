@@ -193,7 +193,7 @@ lv:
       description: "Informācijas paneļa Lietotnes ļauj izveidot un iegult lietojumprogrammas, kurās tiek parādīta lietotāja informācija, pasūtījumu vai maksājumu vēsture, nodrošinot plašāku kontekstu jūsu klientu atbalsta aģentiem."
     dyte:
       name: "Dyte"
-      description: "Dyte ir produkts, kas integrē audio un video funkcijas jūsu lietojumprogrammā. Izmantojot šo integrāciju, jūsu aģenti var sākt video/balss zvanus ar klientiem tieši no Chatwoot."
+      description: "Dyte ir produkts, kas integrē audio un video funkcijas jūsu lietojumprogrammā. Izmantojot šo integrāciju, jūsu aģenti var sākt video/balss zvanus ar klientiem tieši no Emovur Chat."
       meeting_name: "%{agent_name} ir sācis sapulci"
     slack:
       name: "Slack"
