@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "TITLE": "登录到Emovur Chat",
+    "TITLE": "登录到The Omnibox",
     "EMAIL": {
       "LABEL": "Email",
       "PLACEHOLDER": "example{'@'}companyname.com",

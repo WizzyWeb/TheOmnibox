@@ -1,9 +1,9 @@
 {
-  "name": "Emovur Chat",
-  "description": "Emovur Chat is a customer support tool for instant messaging channels",
-  "website": "https://chatapp.emovur.com/",
+  "name": "The Omnibox",
+  "description": "The Omnibox is a customer support tool for instant messaging channels",
+  "website": "https://chat.theomnibox.com/",
   "repository": "https://github.com/chatwoot/chatwoot",
-  "logo": "https://chatapp.emovur.com/brand-assets/logo_thumbnail.svg",
+  "logo": "https://chat.theomnibox.com/brand-assets/logo_thumbnail.svg",
   "keywords": [
     "live chat",
     "customer support",
@@ -26,11 +26,11 @@
       "value": "production"
     },
     "FRONTEND_URL": {
-      "description": "Public root URL of the Emovur Chat installation. This will be used in the emails.",
+      "description": "Public root URL of the The Omnibox installation. This will be used in the emails.",
       "value": "https://CHANGE.herokuapp.com"
     },
     "INSTALLATION_ENV": {
-      "description": "Installation method used for Emovur Chat.",
+      "description": "Installation method used for The Omnibox.",
       "value": "heroku"
     },
     "REDIS_OPENSSL_VERIFY_MODE":{

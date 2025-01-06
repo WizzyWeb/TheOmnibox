@@ -4,14 +4,14 @@ import PortalSwitcher from './PortalSwitcher.vue';
 const portals = [
   {
     id: 1,
-    name: 'Emovur Chat Help Center',
+    name: 'The Omnibox Help Center',
     articles: 67,
     domain: 'chatwoot.help',
     slug: 'help-center',
   },
   {
     id: 2,
-    name: 'Emovur Chat Handbook',
+    name: 'The Omnibox Handbook',
     articles: 42,
     domain: 'chatwoot.help',
     slug: 'handbook',
@@ -20,7 +20,7 @@ const portals = [
     id: 3,
     name: 'Developer Documentation',
     articles: 89,
-    domain: 'dev.emovur.com',
+    domain: 'dev.theomnibox.com',
     slug: 'docs',
   },
 ];

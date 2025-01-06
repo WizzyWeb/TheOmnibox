@@ -386,7 +386,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug kategorije za adrese",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Slug je obavezan"
         },
         "DESCRIPTION": {
@@ -417,7 +417,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug kategorije za adrese",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Slug je obavezan"
         },
         "DESCRIPTION": {

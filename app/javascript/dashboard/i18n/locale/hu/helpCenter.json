@@ -386,7 +386,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Kategória az URL-ekhez",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Érme megadása kötelező"
         },
         "DESCRIPTION": {
@@ -417,7 +417,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Kategória az URL-ekhez",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Slug megadása kötelező"
         },
         "DESCRIPTION": {

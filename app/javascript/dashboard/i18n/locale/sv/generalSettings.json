@@ -48,10 +48,10 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "Du kan nu ta emot e-postmeddelanden i din egna domän."
       }
     },
-    "UPDATE_CHATWOOT": "En uppdatering %{latestChatwootVersion} för Emovur Chat är tillgänglig. Vänligen uppdatera din instans.",
+    "UPDATE_CHATWOOT": "En uppdatering %{latestChatwootVersion} för The Omnibox är tillgänglig. Vänligen uppdatera din instans.",
     "LEARN_MORE": "Läs mer",
-    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using Emovur Chat",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Emovur Chat",
+    "PAYMENT_PENDING": "Your payment is pending. Please update your payment information to continue using The Omnibox",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using The Omnibox",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {

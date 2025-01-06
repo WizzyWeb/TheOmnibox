@@ -348,7 +348,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Emovur Chat supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below."
+        "DESC": "The Omnibox supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below."
       },
       "AGENTS": {
         "TITLE": "ஏஜென்ட்கள்",
@@ -745,7 +745,7 @@
         "AGENT_MESSAGE": "Hello"
       },
       "BRANDING_TEXT": "சாட்வுட் மூலம் இயக்கபடுகிறது",
-      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
+      "SCRIPT_SETTINGS": "\n      window.omniboxSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

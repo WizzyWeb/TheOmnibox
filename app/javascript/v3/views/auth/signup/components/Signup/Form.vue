@@ -64,9 +64,9 @@ export default {
     ...mapGetters({ globalConfig: 'globalConfig/get' }),
     termsLink() {
       return this.$t('REGISTER.TERMS_ACCEPT')
-        .replace('https://www.emovur.com/terms', this.globalConfig.termsURL)
+        .replace('https://www.theomnibox.com/terms', this.globalConfig.termsURL)
         .replace(
-          'https://www.emovur.com/privacy-policy',
+          'https://www.theomnibox.com/privacy-policy',
           this.globalConfig.privacyURL
         );
     },

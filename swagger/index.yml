@@ -1,15 +1,15 @@
 swagger: "2.0"
 info:
-  description: This is the API documentation for Emovur Chat server.
+  description: This is the API documentation for The Omnibox server.
   version: 1.0.0
   title: Chatwoot
-  termsOfService:	https://www.emovur.com/terms-of-service/
+  termsOfService:	https://www.theomnibox.com/terms-of-service/
   contact:
-    email: hello@emovur.com
+    email: hello@theomnibox.com
   license:
     name: MIT License
     url: https://opensource.org/licenses/MIT
-host: chatapp.emovur.com
+host: chat.theomnibox.com
 basePath: /
 schemes:
   - https

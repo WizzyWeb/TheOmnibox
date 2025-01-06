@@ -48,10 +48,10 @@
         "CUSTOM_EMAIL_DOMAIN_ENABLED": "يمكنك تلقي رسائل البريد الإلكتروني في النطاق المخصص الخاص بك الآن."
       }
     },
-    "UPDATE_CHATWOOT": "يتوفر تحديث {latestChatwootVersion} لـ Emovur Chat. الرجاء التحديث.",
+    "UPDATE_CHATWOOT": "يتوفر تحديث {latestChatwootVersion} لـ The Omnibox. الرجاء التحديث.",
     "LEARN_MORE": "اعرف المزيد",
-    "PAYMENT_PENDING": "الدفعة الخاصة بك معلقة. الرجاء تحديث معلومات الدفع الخاصة بك للاستمرار في استخدام Emovur Chat",
-    "LIMITS_UPGRADE": "لقد تجاوز حسابك حدود الاستخدام، يرجى ترقية خطتك للاستمرار في استخدام Emovur Chat",
+    "PAYMENT_PENDING": "الدفعة الخاصة بك معلقة. الرجاء تحديث معلومات الدفع الخاصة بك للاستمرار في استخدام The Omnibox",
+    "LIMITS_UPGRADE": "لقد تجاوز حسابك حدود الاستخدام، يرجى ترقية خطتك للاستمرار في استخدام The Omnibox",
     "OPEN_BILLING": "فتح الفواتير"
   },
   "FORMS": {

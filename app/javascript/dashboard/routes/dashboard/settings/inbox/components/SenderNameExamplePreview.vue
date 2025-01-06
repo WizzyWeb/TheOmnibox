@@ -31,7 +31,7 @@ export default {
           ),
           preview: {
             senderName: 'Smith',
-            businessName: 'Emovur Chat',
+            businessName: 'The Omnibox',
             email: '<support@yourbusiness.com>',
           },
         },
@@ -45,7 +45,7 @@ export default {
           ),
           preview: {
             senderName: '',
-            businessName: 'Emovur Chat',
+            businessName: 'The Omnibox',
             email: '<support@yourbusiness.com>',
           },
         },

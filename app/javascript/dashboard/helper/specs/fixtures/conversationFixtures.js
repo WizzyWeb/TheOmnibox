@@ -17,7 +17,7 @@ export const conversationData = {
       account_id: 1,
       availability_status: 'offline',
       confirmed: true,
-      email: 'muhsin@emovur.com',
+      email: 'muhsin@theomnibox.com',
       available_name: 'Muhsin Keloth',
       id: 21,
       name: 'Muhsin Keloth',

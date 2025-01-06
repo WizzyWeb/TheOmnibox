@@ -9,8 +9,8 @@ describe('#getters', () => {
   });
   describe('#getReferrerHost', () => {
     it('returns correct value', () => {
-      const state = { referrerHost: 'www.emovur.com' };
-      expect(getters.getReferrerHost(state)).toEqual('www.emovur.com');
+      const state = { referrerHost: 'www.theomnibox.com' };
+      expect(getters.getReferrerHost(state)).toEqual('www.theomnibox.com');
     });
   });
   describe('#getShowUnreadMessagesDialog', () => {

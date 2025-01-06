@@ -20,24 +20,24 @@ describe('#getUserString', () => {
         user: {
           name: 'Pranav',
           email: 'pranav@example.com',
-          avatar_url: 'https://images.emovur.com/placeholder',
+          avatar_url: 'https://images.theomnibox.com/placeholder',
           identifier_hash: '12345',
         },
         identifier: '12345',
       })
     ).toBe(
-      'avatar_urlhttps://images.emovur.com/placeholderemailpranav@example.comnamePranavidentifier_hash12345identifier12345'
+      'avatar_urlhttps://images.theomnibox.com/placeholderemailpranav@example.comnamePranavidentifier_hash12345identifier12345'
     );
 
     expect(
       getUserString({
         user: {
           email: 'pranav@example.com',
-          avatar_url: 'https://images.emovur.com/placeholder',
+          avatar_url: 'https://images.theomnibox.com/placeholder',
         },
       })
     ).toBe(
-      'avatar_urlhttps://images.emovur.com/placeholderemailpranav@example.comnameidentifier_hashidentifier'
+      'avatar_urlhttps://images.theomnibox.com/placeholderemailpranav@example.comnameidentifier_hashidentifier'
     );
   });
 });

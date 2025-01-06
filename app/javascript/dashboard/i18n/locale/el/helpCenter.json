@@ -386,7 +386,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug κατηγορίας για urls",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Το Slug είναι απαραίτητο"
         },
         "DESCRIPTION": {
@@ -417,7 +417,7 @@
         "SLUG": {
           "LABEL": "Slug",
           "PLACEHOLDER": "Slug κατηγορίας για urls",
-          "HELP_TEXT": "chatapp.emovur.com/hc/my-portal/en-US/categories/my-slug",
+          "HELP_TEXT": "chat.theomnibox.com/hc/my-portal/en-US/categories/my-slug",
           "ERROR": "Το Slug είναι απαραίτητο"
         },
         "DESCRIPTION": {

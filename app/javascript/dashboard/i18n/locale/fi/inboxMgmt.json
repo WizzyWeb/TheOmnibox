@@ -41,7 +41,7 @@
         "PLACEHOLDER": "Anna sivuston nimi (esim. Acme Oy)"
       },
       "FB": {
-        "HELP": "PS: Kirjautumalla sisään saamme vain pääsyn sivusi viesteihin. Emovur Chat ei koskaan näe yksityisviestejäsi.",
+        "HELP": "PS: Kirjautumalla sisään saamme vain pääsyn sivusi viesteihin. The Omnibox ei koskaan näe yksityisviestejäsi.",
         "CHOOSE_PAGE": "Valitse sivu",
         "CHOOSE_PLACEHOLDER": "Valitse sivu listasta",
         "INBOX_NAME": "Kansion nimi",
@@ -343,7 +343,7 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "Emovur Chat tukee live-chat-widgetejä, Facebook Messenger, WhatsApp, sähköpostit jne. kanavina. Jos haluat rakentaa mukautetun kanavan, voit luoda sen API-kanavalla. Päästäksesi alkuun, valitse jokin kanava alta."
+        "DESC": "The Omnibox tukee live-chat-widgetejä, Facebook Messenger, WhatsApp, sähköpostit jne. kanavina. Jos haluat rakentaa mukautetun kanavan, voit luoda sen API-kanavalla. Päästäksesi alkuun, valitse jokin kanava alta."
       },
       "AGENTS": {
         "TITLE": "Edustajat",
@@ -739,8 +739,8 @@
         "USER_MESSAGE": "Hei",
         "AGENT_MESSAGE": "Moi"
       },
-      "BRANDING_TEXT": "Palvelun tarjoaa Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
+      "BRANDING_TEXT": "Palvelun tarjoaa The Omnibox",
+      "SCRIPT_SETTINGS": "\n      window.omniboxSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

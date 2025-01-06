@@ -21,7 +21,7 @@ describe('#actions', () => {
         { commit },
         {
           websiteToken: 'XDsafmADasd',
-          currentURL: 'https://emovur.com',
+          currentURL: 'https://theomnibox.com',
           isInBusinessHours: true,
         }
       );
@@ -35,7 +35,7 @@ describe('#actions', () => {
             {
               id: 11,
               timeOnPage: '20',
-              url: 'https://emovur.com',
+              url: 'https://theomnibox.com',
               triggerOnlyDuringBusinessHours: false,
             },
           ],
@@ -49,7 +49,7 @@ describe('#actions', () => {
         { commit },
         {
           websiteToken: 'XDsafmADasd',
-          currentURL: 'https://www.emovur.com',
+          currentURL: 'https://www.theomnibox.com',
           isInBusinessHours: true,
         }
       );
@@ -59,7 +59,7 @@ describe('#actions', () => {
   describe('#initCampaigns', () => {
     const actionParams = {
       websiteToken: 'XDsafmADasd',
-      currentURL: 'https://emovur.com',
+      currentURL: 'https://theomnibox.com',
     };
     it('sends correct actions if campaigns are empty', async () => {
       await actions.initCampaigns(
@@ -81,7 +81,7 @@ describe('#actions', () => {
             {
               id: 11,
               timeOnPage: '20',
-              url: 'https://emovur.com',
+              url: 'https://theomnibox.com',
               triggerOnlyDuringBusinessHours: false,
             },
           ],

@@ -193,14 +193,14 @@ zh_TW:
       description: "Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents."
     dyte:
       name: "Dyte"
-      description: "Dyte is tool that helps you to add live audio & video to your application with just a few lines of code. This integration allows you to give an option to your agents to have a video or voice call with your customers from without leaving Emovur."
+      description: "Dyte is tool that helps you to add live audio & video to your application with just a few lines of code. This integration allows you to give an option to your agents to have a video or voice call with your customers from without leaving TheOmnibox."
       meeting_name: "%{agent_name} has started a meeting"
     slack:
       name: "Slack"
-      description: "Integrate Emovur with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
+      description: "Integrate TheOmnibox with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
     webhooks:
       name: "Webhooks"
-      description: "Webhook events provide real-time updates about activities in your Emovur account. You can subscribe to your preferred events, and Emovur will send you HTTP callbacks with the updates."
+      description: "Webhook events provide real-time updates about activities in your TheOmnibox account. You can subscribe to your preferred events, and TheOmnibox will send you HTTP callbacks with the updates."
     dialogflow:
       name: "Dialogflow"
       description: "Build chatbots with Dialogflow and easily integrate them into your inbox. These bots can handle initial queries before transferring them to a customer service agent."

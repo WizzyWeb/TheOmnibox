@@ -1,6 +1,6 @@
 {
   "LOGIN": {
-    "TITLE": "Login to Emovur Chat",
+    "TITLE": "Login to The Omnibox",
     "EMAIL": {
       "LABEL": "E-pošta",
       "PLACEHOLDER": "example{'@'}companyname.com",

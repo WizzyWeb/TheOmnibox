@@ -39,13 +39,13 @@ describe('#buildPopoutURL', () => {
   it('returns popout URL', () => {
     expect(
       buildPopoutURL({
-        origin: 'https://emovur.com',
+        origin: 'https://theomnibox.com',
         conversationCookie: 'random-jwt-token',
         websiteToken: 'random-website-token',
         locale: 'ar',
       })
     ).toEqual(
-      'https://emovur.com/widget?cw_conversation=random-jwt-token&website_token=random-website-token&locale=ar'
+      'https://theomnibox.com/widget?cw_conversation=random-jwt-token&website_token=random-website-token&locale=ar'
     );
   });
 });

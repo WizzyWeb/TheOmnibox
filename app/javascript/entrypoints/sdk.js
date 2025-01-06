@@ -41,11 +41,11 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     restoreWidgetInDOM(event.newDocument.body)
   );
 
-  const emovurSettings = window.emovurSettings || {};
-  let locale = emovurSettings.locale;
-  let baseDomain = emovurSettings.baseDomain;
+  const omniboxSettings = window.omniboxSettings || {};
+  let locale = omniboxSettings.locale;
+  let baseDomain = omniboxSettings.baseDomain;
 
-  if (emovurSettings.useBrowserLanguage) {
+  if (omniboxSettings.useBrowserLanguage) {
     locale = window.navigator.language.replace('-', '_');
   }
 
@@ -53,19 +53,19 @@ const runSDK = ({ baseUrl, websiteToken }) => {
     baseUrl,
     baseDomain,
     hasLoaded: false,
-    hideMessageBubble: emovurSettings.hideMessageBubble || false,
+    hideMessageBubble: omniboxSettings.hideMessageBubble || false,
     isOpen: false,
-    position: emovurSettings.position === 'left' ? 'left' : 'right',
+    position: omniboxSettings.position === 'left' ? 'left' : 'right',
     websiteToken,
     locale,
-    useBrowserLanguage: emovurSettings.useBrowserLanguage || false,
-    type: getBubbleView(emovurSettings.type),
-    launcherTitle: emovurSettings.launcherTitle || '',
-    showPopoutButton: emovurSettings.showPopoutButton || false,
-    showUnreadMessagesDialog: emovurSettings.showUnreadMessagesDialog ?? true,
-    widgetStyle: getWidgetStyle(emovurSettings.widgetStyle) || 'standard',
+    useBrowserLanguage: omniboxSettings.useBrowserLanguage || false,
+    type: getBubbleView(omniboxSettings.type),
+    launcherTitle: omniboxSettings.launcherTitle || '',
+    showPopoutButton: omniboxSettings.showPopoutButton || false,
+    showUnreadMessagesDialog: omniboxSettings.showUnreadMessagesDialog ?? true,
+    widgetStyle: getWidgetStyle(omniboxSettings.widgetStyle) || 'standard',
     resetTriggered: false,
-    darkMode: getDarkMode(emovurSettings.darkMode),
+    darkMode: getDarkMode(omniboxSettings.darkMode),
 
     toggle(state) {
       IFrameHelper.events.toggleBubble(state);
@@ -203,6 +203,6 @@ const runSDK = ({ baseUrl, websiteToken }) => {
   });
 };
 
-window.emovurSDK = {
+window.omniboxSDK = {
   run: runSDK,
 };

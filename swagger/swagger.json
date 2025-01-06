@@ -1,19 +1,19 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is the API documentation forEmovur Chat server.",
+    "description": "This is the API documentation forThe Omnibox server.",
     "version": "1.0.0",
     "title": "Chatwoot",
-    "termsOfService": "https://www.emovur.com/terms-of-service/",
+    "termsOfService": "https://www.theomnibox.com/terms-of-service/",
     "contact": {
-      "email": "hello@emovur.com"
+      "email": "hello@theomnibox.com"
     },
     "license": {
       "name": "MIT License",
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "chatapp.emovur.com",
+  "host": "chat.theomnibox.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -3038,7 +3038,7 @@
         ],
         "operationId": "newConversation",
         "summary": "Create New Conversation",
-        "description": "Creating a conversation inEmovur Chat requires a source id. \n\n Learn more about source_id: https://github.com/chatwoot/chatwoot/wiki/Building-on-Top-of-Chatwoot:-Importing-Existing-Contacts-and-Creating-Conversations",
+        "description": "Creating a conversation inThe Omnibox requires a source id. \n\n Learn more about source_id: https://github.com/chatwoot/chatwoot/wiki/Building-on-Top-of-Chatwoot:-Importing-Existing-Contacts-and-Creating-Conversations",
         "security": [
           {
             "userApiKey": [
@@ -6235,7 +6235,7 @@
         },
         "pubsub_token": {
           "type": "string",
-          "description": "The token to be used to connect toEmovur Chat websocket"
+          "description": "The token to be used to connect toThe Omnibox websocket"
         }
       }
     },
@@ -6793,7 +6793,7 @@
         "homepage_link": {
           "type": "string",
           "description": "link to main dashboard",
-          "example": "https://www.emovur.com/"
+          "example": "https://www.theomnibox.com/"
         },
         "name": {
           "type": "string",
@@ -7363,7 +7363,7 @@
       "name": "source_id",
       "required": true,
       "type": "string",
-      "description": "Id of the session for which the conversation is created.\n\n\n\n Source Ids can be obtained through contactable inboxes API or via generated.<br/><br/>Website:Emovur Chat generated string which can be obtained from webhook events. <br/> Phone Channels(Twilio): Phone number in e164 format <br/> Email Channels: Contact Email address <br/> API Channel: Any Random String"
+      "description": "Id of the session for which the conversation is created.\n\n\n\n Source Ids can be obtained through contactable inboxes API or via generated.<br/><br/>Website:The Omnibox generated string which can be obtained from webhook events. <br/> Phone Channels(Twilio): Phone number in e164 format <br/> Email Channels: Contact Email address <br/> API Channel: Any Random String"
     },
     "contact_sort_param": {
       "in": "query",

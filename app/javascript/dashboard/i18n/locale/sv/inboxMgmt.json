@@ -12,7 +12,7 @@
       {
         "title": "Välj kanal",
         "route": "settings_inbox_new",
-        "body": "Välj den leverantör du vill integrera med Emovur Chat."
+        "body": "Välj den leverantör du vill integrera med The Omnibox."
       },
       {
         "title": "Skapa inkorg",
@@ -41,7 +41,7 @@
         "PLACEHOLDER": "Ange namnet på din webbplats (t.ex. Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Genom att logga in får vi bara tillgång till din sidas meddelanden. Dina privata meddelanden kan aldrig nås av Emovur Chat.",
+        "HELP": "PS: Genom att logga in får vi bara tillgång till din sidas meddelanden. Dina privata meddelanden kan aldrig nås av The Omnibox.",
         "CHOOSE_PAGE": "Välj sida",
         "CHOOSE_PLACEHOLDER": "Välj en sida från listan",
         "INBOX_NAME": "Inkorgsnamn",
@@ -343,7 +343,7 @@
       },
       "AUTH": {
         "TITLE": "Välj en kanal",
-        "DESC": "Emovur Chat supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below."
+        "DESC": "The Omnibox supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below."
       },
       "AGENTS": {
         "TITLE": "Agenter",
@@ -353,11 +353,11 @@
       },
       "DETAILS": {
         "TITLE": "Inkorgsdetaljer",
-        "DESC": "Från rullgardinsmenyn nedan, välj den Facebook-sida du vill ansluta till Emovur Chat. Du kan också ge ett anpassat namn till din inkorg för bättre identifiering."
+        "DESC": "Från rullgardinsmenyn nedan, välj den Facebook-sida du vill ansluta till The Omnibox. Du kan också ge ett anpassat namn till din inkorg för bättre identifiering."
       },
       "FINISH": {
         "TITLE": "Där satt den!",
-        "DESC": "Du har framgångsrikt integrerat din Facebook-sida med Emovur Chat. Nästa gång en kund meddelar din sida kommer konversationen automatiskt att visas på din inkorg.<br>Vi ger dig också en widget skript som du enkelt kan lägga till din webbplats. När detta är live på din webbplats, kunder kan meddela dig direkt från din webbplats utan hjälp av något externt verktyg och konversationen kommer att visas här på Emovur Chat.<br>Cool, va? Tja, vi försöker säkert att vara :)"
+        "DESC": "Du har framgångsrikt integrerat din Facebook-sida med The Omnibox. Nästa gång en kund meddelar din sida kommer konversationen automatiskt att visas på din inkorg.<br>Vi ger dig också en widget skript som du enkelt kan lägga till din webbplats. När detta är live på din webbplats, kunder kan meddela dig direkt från din webbplats utan hjälp av något externt verktyg och konversationen kommer att visas här på The Omnibox.<br>Cool, va? Tja, vi försöker säkert att vara :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -739,8 +739,8 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hello"
       },
-      "BRANDING_TEXT": "Drivs av Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
+      "BRANDING_TEXT": "Drivs av The Omnibox",
+      "SCRIPT_SETTINGS": "\n      window.omniboxSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

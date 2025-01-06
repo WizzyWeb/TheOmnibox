@@ -13,29 +13,29 @@ describe('#Campaigns Helper', () => {
     it('returns correct value if a valid URL is passed', () => {
       expect(
         isPatternMatchingWithURL(
-          'https://emovur.com/pricing*',
-          'https://emovur.com/pricing/'
+          'https://theomnibox.com/pricing*',
+          'https://theomnibox.com/pricing/'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://*.emovur.com/pricing/',
-          'https://chatapp.emovur.com/pricing/'
+          'https://*.theomnibox.com/pricing/',
+          'https://chat.theomnibox.com/pricing/'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?emovur.com/pricing?test=true',
-          'https://chatapp.emovur.com/pricing/?test=true'
+          'https://{*.}?theomnibox.com/pricing?test=true',
+          'https://chat.theomnibox.com/pricing/?test=true'
         )
       ).toBe(true);
 
       expect(
         isPatternMatchingWithURL(
-          'https://{*.}?emovur.com/pricing*\\?*',
-          'https://emovur.com/pricing/?test=true'
+          'https://{*.}?theomnibox.com/pricing*\\?*',
+          'https://theomnibox.com/pricing/?test=true'
         )
       ).toBe(true);
     });
@@ -48,13 +48,13 @@ describe('#Campaigns Helper', () => {
           id: 1,
           timeOnPage: 3,
           triggerOnlyDuringBusinessHours: false,
-          url: 'https://www.emovur.com/pricing',
+          url: 'https://www.theomnibox.com/pricing',
         },
         {
           id: 2,
           triggerOnlyDuringBusinessHours: false,
           timeOnPage: 6,
-          url: 'https://www.emovur.com/about',
+          url: 'https://www.theomnibox.com/about',
         },
       ]);
     });
@@ -67,23 +67,23 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.emovur.com/pricing',
+              url: 'https://www.theomnibox.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.emovur.com/about',
+              url: 'https://www.theomnibox.com/about',
               triggerOnlyDuringBusinessHours: false,
             },
           ],
-          currentURL: 'https://www.emovur.com/about/',
+          currentURL: 'https://www.theomnibox.com/about/',
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.emovur.com/about',
+          url: 'https://www.theomnibox.com/about',
           triggerOnlyDuringBusinessHours: false,
         },
       ]);
@@ -95,24 +95,24 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.emovur.com/pricing',
+              url: 'https://www.theomnibox.com/pricing',
               triggerOnlyDuringBusinessHours: false,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.emovur.com/about',
+              url: 'https://www.theomnibox.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.emovur.com/about/',
+          currentURL: 'https://www.theomnibox.com/about/',
           isInBusinessHours: true,
         })
       ).toStrictEqual([
         {
           id: 2,
           timeOnPage: 6,
-          url: 'https://www.emovur.com/about',
+          url: 'https://www.theomnibox.com/about',
           triggerOnlyDuringBusinessHours: true,
         },
       ]);
@@ -124,17 +124,17 @@ describe('#Campaigns Helper', () => {
             {
               id: 1,
               timeOnPage: 3,
-              url: 'https://www.emovur.com/pricing',
+              url: 'https://www.theomnibox.com/pricing',
               triggerOnlyDuringBusinessHours: true,
             },
             {
               id: 2,
               timeOnPage: 6,
-              url: 'https://www.emovur.com/about',
+              url: 'https://www.theomnibox.com/about',
               triggerOnlyDuringBusinessHours: true,
             },
           ],
-          currentURL: 'https://www.emovur.com/about/',
+          currentURL: 'https://www.theomnibox.com/about/',
           isInBusinessHours: false,
         })
       ).toStrictEqual([]);

@@ -4,11 +4,11 @@ describe('PortalHelper', () => {
   describe('buildPortalURL', () => {
     it('returns the correct url', () => {
       window.chatwootConfig = {
-        hostURL: 'https://chatapp.emovur.com',
-        helpCenterURL: 'https://help.emovur.com',
+        hostURL: 'https://chat.theomnibox.com',
+        helpCenterURL: 'https://help.theomnibox.com',
       };
       expect(buildPortalURL('handbook')).toEqual(
-        'https://help.emovur.com/hc/handbook'
+        'https://help.theomnibox.com/hc/handbook'
       );
       window.chatwootConfig = {};
     });
@@ -17,12 +17,12 @@ describe('PortalHelper', () => {
   describe('buildPortalArticleURL', () => {
     it('returns the correct url', () => {
       window.chatwootConfig = {
-        hostURL: 'https://chatapp.emovur.com',
-        helpCenterURL: 'https://help.emovur.com',
+        hostURL: 'https://chat.theomnibox.com',
+        helpCenterURL: 'https://help.theomnibox.com',
       };
       expect(
         buildPortalArticleURL('handbook', 'culture', 'fr', 'article-slug')
-      ).toEqual('https://help.emovur.com/hc/handbook/articles/article-slug');
+      ).toEqual('https://help.theomnibox.com/hc/handbook/articles/article-slug');
       window.chatwootConfig = {};
     });
   });

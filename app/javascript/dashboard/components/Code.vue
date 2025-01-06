@@ -21,7 +21,7 @@ export default {
     },
     codepenTitle: {
       type: String,
-      default: 'Emovur Chat Codepen',
+      default: 'The Omnibox Codepen',
     },
   },
   computed: {

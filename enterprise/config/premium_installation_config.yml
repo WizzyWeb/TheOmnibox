@@ -8,15 +8,15 @@
 - name: LOGO_DARK
   value: '/brand-assets/logo_dark.svg'
 - name: BRAND_URL
-  value: 'https://www.emovur.com'
+  value: 'https://www.theomnibox.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://www.emovur.com'
+  value: 'https://www.theomnibox.com'
 - name: BRAND_NAME
   value: 'Chatwoot'
 - name: TERMS_URL
-  value: 'https://www.emovur.com/terms-of-service'
+  value: 'https://www.theomnibox.com/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://www.emovur.com/privacy-policy'
+  value: 'https://www.theomnibox.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 # ------- End of Branding Related Config ------- #

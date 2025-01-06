@@ -9,9 +9,9 @@ describe('messageFormatterMixin', () => {
     };
     const wrapper = shallowMount(Component);
     const message =
-      '<b>Emovur is an opensource tool. https://www.emovur.com</b>';
+      '<b>TheOmnibox is an opensource tool. https://www.theomnibox.com</b>';
     expect(wrapper.vm.getPlainText(message)).toMatch(
-      'Emovur is an opensource tool. https://www.emovur.com'
+      'TheOmnibox is an opensource tool. https://www.theomnibox.com'
     );
   });
 });

@@ -12,7 +12,7 @@
 %>
 <script>
 
-window.emovurSettings = {
+window.omniboxSettings = {
   hideMessageBubble: false,
   // showUnreadMessagesDialog: false,
   // baseDomain: '.loca.lt',
@@ -33,7 +33,7 @@ window.emovurSettings = {
   g.async = true;
   s.parentNode.insertBefore(g,s);
   g.onload=function(){
-    window.emovurSDK.run({
+    window.omniboxSDK.run({
       websiteToken: '<%= @web_widget.website_token %>',
       baseUrl: BASE_URL
     })

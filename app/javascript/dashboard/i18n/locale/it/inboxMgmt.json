@@ -12,7 +12,7 @@
       {
         "title": "Scegli il canale",
         "route": "Nuovo",
-        "body": "Scegli il provider che vuoi integrare con Emovur Chat."
+        "body": "Scegli il provider che vuoi integrare con The Omnibox."
       },
       {
         "title": "Crea casella",
@@ -41,7 +41,7 @@
         "PLACEHOLDER": "Inserisci il nome del tuo sito web (ad esempio: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Accedendo, abbiamo accesso solo ai messaggi della tua pagina. Emovur Chat, non potrà accedere ai tuoi messaggi privati.",
+        "HELP": "PS: Accedendo, abbiamo accesso solo ai messaggi della tua pagina. The Omnibox, non potrà accedere ai tuoi messaggi privati.",
         "CHOOSE_PAGE": "Scegli una pagina",
         "CHOOSE_PLACEHOLDER": "Seleziona una pagina dalla lista",
         "INBOX_NAME": "Nome casella",
@@ -343,7 +343,7 @@
       },
       "AUTH": {
         "TITLE": "Scegli un canale",
-        "DESC": "Emovur Chat supporta i widget di chat live, Facebook Messenger, profili Twitter, WhatsApp, Email, ecc., come canali. Se vuoi costruire un canale personalizzato, puoi crearlo usando il canale API. Per iniziare, scegli uno dei canali qui sotto."
+        "DESC": "The Omnibox supporta i widget di chat live, Facebook Messenger, profili Twitter, WhatsApp, Email, ecc., come canali. Se vuoi costruire un canale personalizzato, puoi crearlo usando il canale API. Per iniziare, scegli uno dei canali qui sotto."
       },
       "AGENTS": {
         "TITLE": "Agenti",
@@ -353,11 +353,11 @@
       },
       "DETAILS": {
         "TITLE": "Dettagli casella",
-        "DESC": "Dal menu a tendina qui sotto, seleziona la pagina Facebook che vuoi collegare a Emovur Chat. Puoi anche assegnare un nome personalizzato alla tua casella per una migliore identificazione."
+        "DESC": "Dal menu a tendina qui sotto, seleziona la pagina Facebook che vuoi collegare a The Omnibox. Puoi anche assegnare un nome personalizzato alla tua casella per una migliore identificazione."
       },
       "FINISH": {
         "TITLE": "Azzeccato!",
-        "DESC": "Hai completato con successo l'integrazione della tua pagina Facebook con il Emovur Chat. La prossima volta che un cliente invia un messaggio alla tua pagina, la conversazione apparirà automaticamente nella tua casella.<br>Ti forniamo anche uno script per widget che puoi facilmente aggiungere al tuo sito web. Una volta dal vivo sul tuo sito web, i clienti possono inviarti messaggi direttamente dal tuo sito web senza l'aiuto di alcuno strumento esterno e la conversazione apparirà proprio qui, su Emovur Chat.<br>Bello, eh? Beh, cerchiamo di esserlo :)"
+        "DESC": "Hai completato con successo l'integrazione della tua pagina Facebook con il The Omnibox. La prossima volta che un cliente invia un messaggio alla tua pagina, la conversazione apparirà automaticamente nella tua casella.<br>Ti forniamo anche uno script per widget che puoi facilmente aggiungere al tuo sito web. Una volta dal vivo sul tuo sito web, i clienti possono inviarti messaggi direttamente dal tuo sito web senza l'aiuto di alcuno strumento esterno e la conversazione apparirà proprio qui, su The Omnibox.<br>Bello, eh? Beh, cerchiamo di esserlo :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -739,8 +739,8 @@
         "USER_MESSAGE": "Salve",
         "AGENT_MESSAGE": "Ciao"
       },
-      "BRANDING_TEXT": "Offerto da Emovur Chat",
-      "SCRIPT_SETTINGS": "\n      window.emovurSettings = {options};"
+      "BRANDING_TEXT": "Offerto da The Omnibox",
+      "SCRIPT_SETTINGS": "\n      window.omniboxSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
       "MICROSOFT": "Microsoft",

@@ -66,7 +66,7 @@ export default {
       }
     },
     openOpenAIDoc() {
-      window.open('https://www.emovur.com/blog/v2-17', '_blank');
+      window.open('https://www.theomnibox.com/blog/v2-17', '_blank');
     },
   },
 };

@@ -1,4 +1,4 @@
-# give Emovur Chat user permission to start/stop/restart Emovur Chat systemd service
+# give The Omnibox user permission to start/stop/restart The Omnibox systemd service
 
 %chatwoot ALL=NOPASSWD: /bin/systemctl start chatwoot.target
 %chatwoot ALL=NOPASSWD: /bin/systemctl stop chatwoot.target

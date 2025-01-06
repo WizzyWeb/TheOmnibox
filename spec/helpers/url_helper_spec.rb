@@ -4,7 +4,7 @@ describe UrlHelper do
   describe '#url_valid' do
     context 'when url valid called' do
       it 'return if valid url passed' do
-        expect(helper.url_valid?('https://chatapp.emovur.com/')).to be true
+        expect(helper.url_valid?('https://chat.theomnibox.com/')).to be true
       end
 
       it 'return false if invalid url passed' do
