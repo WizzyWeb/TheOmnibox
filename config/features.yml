@@ -61,8 +61,10 @@
   enabled: true
 - name: custom_reply_email
   enabled: true
+  premium: true
 - name: custom_reply_domain
   enabled: true
+  premium: true
 - name: audit_logs
   enabled: true
 - name: response_bot
@@ -84,7 +86,6 @@
   help_url: https://chwt.app/hc/sla
 - name: help_center_embedding_search
   enabled: false
-  premium: true
 - name: linear_integration
   enabled: false
 - name: captain_integration
