@@ -1,6 +1,6 @@
 {
- "name": "The Omnibox",
- "short_name": "The Omnibox",
+ "name": "The OmniBox",
+ "short_name": "The OmniBox",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
@@ -38,9 +38,9 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ],
- "start_url": "/",
- "display": "standalone",
- "background_color": "#3FC6F1",
- "theme_color": "#1f93ff"
+],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3FC6F1",
+  "theme_color": "#1f93ff"
 }
