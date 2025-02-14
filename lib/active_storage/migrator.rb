@@ -47,12 +47,24 @@ class ActiveStorage::Migrator
   end
 
   # migrate all blobs to "TO" service
-  def self.migrate_blobs(_from_service, to_service, to_service_name)
-    ActiveStorage::Blob.all.each do |blob|
-      migrate_blob(blob, to_service, to_service_name)
-    end
+  def self.migrate_blobs(_from_service, to_service)
+    # Configure the blob service for the source service
+    ActiveStorage::Blob.find_each do |blob|
+      next unless blob.image?
 
-    Rails.logger.debug { 'Migration Succesfully completed' }
+      Rails.logger.debug { '.' }
+
+      begin
+        blob.open do |io|
+          checksum = blob.checksum
+          to_service.upload(blob.key, io, checksum: checksum)
+        end
+      rescue ActiveStorage::FileNotFoundError => e
+        # ... ignore file not found error, if it doesn't exist, it doesn't make sense to migrate it
+        Rails.logger.debug { 'Non-existant file, unable to migrate it' }
+      end
+    end
+    Rails.logger.debug { 'Successful migration' }
   end
 
   # migrate a blob
