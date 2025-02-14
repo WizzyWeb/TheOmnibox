@@ -82,6 +82,9 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+# Load Rake tasks
+require 'rake'
+Rails.application.load_tasks
 
 # Required for fixture_file_upload
 FactoryBot::SyntaxRunner.class_eval do
