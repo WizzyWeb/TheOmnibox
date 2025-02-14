@@ -50,9 +50,14 @@ class ActiveStorage::Migrator
 
       Rails.logger.debug { '.' }
 
-      blob.open do |io|
-        checksum = blob.checksum
-        to_service.upload(blob.key, io, checksum: checksum)
+      begin
+        blob.open do |io|
+          checksum = blob.checksum
+          to_service.upload(blob.key, io, checksum: checksum)
+        end
+      rescue ActiveStorage::FileNotFoundError => e
+        # ... ignore file not found error, if it doesn't exist, it doesn't make sense to migrate it
+        Rails.logger.debug { 'Non-existant file, unable to migrate it' }
       end
     end
     Rails.logger.debug { 'Successful migration' }
